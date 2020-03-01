@@ -1,0 +1,12 @@
+{
+    "PROJECT_ID": "project-id",
+    "ACCESS_ID_TO_DATA_DICT":{
+        "access-id-0":{
+            "SECRET":"secret-0",
+            "HOSTNAME_LIST":[
+                "something.domain.com."
+            ]
+        }
+    },
+    "GOOGLE_APPLICATION_CREDENTIALS":"/file/path.json"
+}

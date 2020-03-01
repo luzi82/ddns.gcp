@@ -1,0 +1,29 @@
+service: ddns-gcp-functions
+
+frameworkVersion: ">=1.64.1 <2.0.0"
+
+provider:
+  name: google
+  runtime: python37
+  region: us-central1
+  project: luzi82-2020-nmrvuvazbu
+  credentials: ${file(../conf/setting.json):GOOGLE_APPLICATION_CREDENTIALS}
+  environment:
+    SETTING_PATH: setting_pathxxx
+
+functions:
+  a_set:
+    handler: a_set
+    events:
+      - http: a_set
+
+package:
+  exclude:
+    - ./**
+  include:
+    - ddns_gcp_functions/*.py
+    - main.py
+    - package.json
+
+plugins:
+  - serverless-google-cloudfunctions

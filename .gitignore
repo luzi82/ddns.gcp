@@ -1,0 +1,9 @@
+__pycache__/
+.serverless/
+.project
+/key/
+venv_*/
+venv/
+node_modules/
+_env.sh
+/conf/setting.json
