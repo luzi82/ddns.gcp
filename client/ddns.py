@@ -7,7 +7,9 @@ import os
 from pprint import pprint
 import urllib.request
 
-json_path = os.path.join('..','conf','client.json')
+PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+json_path = os.path.join(PROJECT_PATH,'conf','client.json')
 json_data = futsu.json.path_to_data(json_path)
 
 my_ip_data = futsu.json.path_to_data('https://api.ipify.org?format=json')
