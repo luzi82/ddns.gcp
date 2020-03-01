@@ -7,3 +7,4 @@ venv/
 node_modules/
 _env.sh
 /conf/setting.json
+/conf/client.json

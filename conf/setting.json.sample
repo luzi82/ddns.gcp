@@ -1,5 +1,9 @@
 {
     "PROJECT_ID": "project-id",
+    "SETTING_PATH": "gs://xxx/ddns_gcp/setting.json",
+    "SETTING_BACKUP_PATH": "gs://xxx/ddns_gcp/backup/{TIMESTAMP}/setting.json",
+    "GCP_REGION": "us-central1",
+    "GOOGLE_APPLICATION_CREDENTIALS":"/file/path.json",
     "ACCESS_ID_TO_DATA_DICT":{
         "access-id-0":{
             "SECRET":"secret-0",
@@ -8,5 +12,5 @@
             ]
         }
     },
-    "GOOGLE_APPLICATION_CREDENTIALS":"/file/path.json"
+    "TTL":1800
 }

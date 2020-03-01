@@ -1,0 +1,8 @@
+{
+    "SET_A_URL":"https://xxx.cloudfunctions.net/a_set",
+    "ACCESS_ID":"access-id-0",
+    "SECRET":"secret-0",
+    "HOSTNAME_LIST":[
+        "something.domain.com."
+    ]
+}
