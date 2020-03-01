@@ -111,7 +111,7 @@ def run(request_json, setting_path):
                 'type': 'A',
                 'name': req_hostname,
                 'rrdatas': rrdatas,
-                'ttl': 300,
+                'ttl': setting_data['TTL'],
             })
         if (len(addition_list)<=0) and (len(deletion_list)<=0):
             continue
@@ -128,9 +128,7 @@ def run(request_json, setting_path):
         ret = request.execute()
         #pprint(ret)
     
-    return {
-        'statusCode': 200
-    }
+    return common.ok()
 
 def get_managed_zone_itr(project_id, dns_service):
     request = dns_service.managedZones().list(project=project_id)

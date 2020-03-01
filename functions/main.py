@@ -7,7 +7,7 @@ def run(m,request):
     import flask
     run_args = {}
     run_args['setting_path'] = os.environ['SETTING_PATH']
-    run_args['request_json'] = request.get_json(silent=True)
+    run_args['request_json'] = request.get_data()
     ret = m.run(**run_args)
     response = flask.Response(
         response = ret['body'] if 'body' in ret else None,

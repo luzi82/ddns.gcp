@@ -13,5 +13,8 @@ def e4(fail_code, fail_msg=None):
 def ok(body=None):
     return {
         'statusCode': 200,
-        'body': body,
+        'body': json.dumps({
+            'RESULT': 'SUCCESS',
+            'RETURN': body,
+        }),
     }
