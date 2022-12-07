@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "main.py",
   "devDependencies": {
-    "serverless": "^1.65.0",
+    "serverless": "^3.25.1",
     "serverless-google-cloudfunctions": "^2.4.0"
   }
 }
